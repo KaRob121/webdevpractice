@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Karl's Web Dev Practice</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="javascript/customRangeSlider.js"></script>
+</head>
+<body>
+    <h1>Karl's Web Dev Practice</h1>
+    
+    <h2>Custom Range Slider</h2>
+    <p>Date Created: 2/5/2021</p>
+    <p>Date Modified: 2/5/2021</p>
+    <p>Description: A custom range slider built using HTML, CSS, and Javascript.</p>
+    <p>Source: @coding_gyan_ from Instagram</p>
+    <p>Lessons Learned: This exercise introduced me to the idea of setting -webkit-appearance, -moz-appearance, and appearance to none to override default styles set by some browsers. Another issue that I was having trouble was that lines 2-3, which involved .getElementById(), in my customRangeSlider.js file were returning null. I realized that the reason for the error was because the Javascript code was trying to get the element before the page had finished loading. This was resolved by nesting the Javascript code into a window.onload statement.</p>
+    <div id="customRangeSlider">
+        <input 
+            type="range" 
+            min="0" 
+            max="100" 
+            value="0" 
+            class="slider" 
+            id="range" 
+        />
+        <div id="op"></div>
+    </div>
+</body>
+</html>

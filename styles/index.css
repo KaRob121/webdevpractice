@@ -1,0 +1,33 @@
+/* CUSTOM RANGE SLIDER styles */
+.slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #303030a1;
+    border-radius: 50px;
+    outline: none;
+    transition: all 0.4s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 35px;
+    background: #f58634;
+    border-radius: 10px;
+}
+
+.slider:hover {
+    background: #303030;
+}
+
+#op {
+    font-size: 2.5em;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
